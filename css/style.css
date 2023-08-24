@@ -1,0 +1,301 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Ubuntu:wght@500&display=swap');
+
+body{
+	font-family: 'Ubuntu', sans-serif; color: black;margin: 0px;
+}
+
+header{	width: 100%; height: 60px;background: linear-gradient(to right, rgba(237,102,251,1.00), rgba(123,123,12,0.2)); ; box-shadow: 5px 5px 200px grey; z-index: 100
+	; position: fixed; left: 0; top: 0}
+.menu{padding-top: 20px}
+.menu ul {padding: 0; margin: 0; list-style: none; display: flex;}
+.menu ul li a{padding: 8px 35px}
+.menu a:hover{ background-color:#FFF6D7; color: blueviolet; transition: all 0.35s; border-radius: 50px}
+.menu ul li .menu-item.active{
+	background-color: #fdea96; border-radius: 100px; color: black
+}
+#home {
+    position: relative;
+    min-height: 1000px;
+    width: 100%;
+    padding-top: 100px;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: hsla(57, 100%, 84%, 1);
+
+background: linear-gradient(35deg, hsla(57, 100%, 84%, 0.7) 0%, hsla(280, 84%, 55%, 0) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(57, 100%, 84%, 1) 0%, hsla(280, 84%, 55%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(57, 100%, 84%, 1) 0%, hsla(280, 84%, 55%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#fffbaf", endColorstr="#ab2aed", GradientType=1 );
+    z-index: -1;
+}
+
+#home {
+    background: url("../img/profile.png"), url("../img/br.png");
+    background-repeat: no-repeat;
+    background-position: bottom right, top left;
+}
+
+/* Quay bức hình từ url("../img/br.png") */
+#home {
+    background: url("../img/profile.png"), url("../img/br.png");
+    background-repeat: no-repeat;
+    background-position: bottom right, top left;
+}
+
+/* Áp dụng transform cho hình nền từ url("../img/br.png") */
+#home {
+    background: url("../img/profile.png"), url("../img/br.png");
+    background-repeat: no-repeat;
+    background-position: bottom right, top left;
+}
+
+/* Quay bức hình từ url("../img/br.png") */
+#home {
+    background: url("../img/2.png"), url("../img/br.png");
+    background-repeat: no-repeat;
+    background-position: bottom right, top left;
+}
+
+
+#about{	min-height: 1000px; width: 100%; padding-top: 100px; background-color: white
+background: hsla(55, 98%, 84%, 1);
+
+background: linear-gradient(270deg, hsla(55, 98%, 84%, 1) 0%, hsla(0, 0%, 100%, 1) 35%);
+
+background: -moz-linear-gradient(270deg, hsla(55, 98%, 84%, 1) 0%, hsla(0, 0%, 100%, 1) 35%);
+
+background: -webkit-linear-gradient(270deg, hsla(55, 98%, 84%, 1) 0%, hsla(0, 0%, 100%, 1) 35%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FEF8AE", endColorstr="#FFFFFF", GradientType=1 );
+}
+
+.number{
+	font-size: 120px; color: black; font-weight: bold
+}
+
+.year{
+	padding-left: 10px; letter-spacing: 20px
+}
+#skill{	min-height: 1000px; width: 100%; padding-top: 100px}
+/* Style the tab */
+#skill .tab {
+  border-radius: 10px;
+	overflow: hidden;
+  background-color: none;
+}
+
+/* Style the buttons inside the tab */
+#skill .tab button {
+  width: 50%; border-radius: 10px; 
+background-color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+#skill .tab button:hover {
+  background-color: rgba(255,235,102,1.00);
+}
+
+/* Create an active/current tablink class */
+#skill .tab button.active {
+  background-color: orange;
+}
+
+/* Style the tab content */
+#skill .tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+#services{	min-height: 1000px; width: 100%; padding-top: 100px; background-color: white}
+.service{
+	width: 100%; height: 150px; display: flex
+}
+
+.services-icon{
+	width: 180px; height: 150px; border: 5px solid #cc1385; display: flex; justify-content: center; align-items: center; border-radius: 30px 0px 0px
+}
+
+.services-icon i{
+	font-size: 40px; color: #d70a84
+}
+
+.service-text{
+	width: 100%; height: 150px; padding: 10px
+}
+
+.service:hover .services-icon i{
+	font-size: 80px; transition: 0.5s all;
+}
+
+.service:hover .service-text{
+	background-color: #e76fd9; color: #cc1385
+}
+
+.img-100{
+	width: 50%
+}
+
+.service:hover .img-100{
+	width: 75%; transition: 0.5s all
+}
+
+
+
+#project{min-height: 1000px; width: 100%; padding-top: 100px;}
+
+/* Style the tab */
+#project .tab {  
+}
+
+/* Style the buttons inside the tab */
+#project .tab button {
+ border-bottom: 2px solid white;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px 16px;
+  transition: 0.3s;
+  font-size: 18px;
+}
+
+/* Change background color of buttons on hover */
+#project .tab button:hover {
+  color: orangered; border-bottom: 2px solid orangered;
+}
+
+/* Create an active/current tablink class */
+#project .tab button.active {
+  color: orangered; border-bottom: 2px solid red;
+}
+
+/* Style the tab content */
+#project .tabcontent2 {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+
+.box{
+	display: flex; justify-content: space-between; align-items: center
+}
+
+#project .owl-nav { position:absolute; left:0px; top:30%; width:100%; }
+#project .owl-nav [class*='owl-'] {
+	font-size:50px;border:none;  color: black;width: 40px; border-radius: 100%
+}
+
+#project .owl-nav .owl-next{ position:absolute; right:-3%;}
+#project .owl-nav .owl-prev{ position:absolute; left:-3%;}
+#project .owl-nav [class*='owl-']:hover {
+      background:none;
+      color:red;
+      text-decoration: none; }
+
+#testimonial{	min-height: 1000px; width: 100%; padding-top: 100px; background-color: white;
+background: hsla(0, 0%, 100%, 1);
+
+background: linear-gradient(270deg, hsla(0, 0%, 100%, 1) 0%, hsla(49, 96%, 79%, 1) 100%);
+
+background: -moz-linear-gradient(270deg, hsla(0, 0%, 100%, 1) 0%, hsla(49, 96%, 79%, 1) 100%);
+
+background: -webkit-linear-gradient(270deg, hsla(0, 0%, 100%, 1) 0%, hsla(49, 96%, 79%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFFFFF", endColorstr="#FDEA96", GradientType=1 );}
+#testimonial .client{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 50px;
+	
+}
+#testimonial .client img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+#testimonial .vien{
+	width: 100px; height: 100px;
+	border-radius: 50%;
+	border: 1px solid #EC0307;
+	padding: 7px
+}
+#testimonial .owl-nav { position:absolute; left:0px; top:40%; width:100%; }
+#slide1 .owl-nav [class*='owl-'] {
+	font-size:60px; /*background:rgba(255,255,255,.5);border:1px solid #fff; */ color: #666666
+}
+
+#testimonial .owl-nav .owl-next{ position:absolute; right:5%;}
+#testimonial .owl-nav .owl-prev{ position:absolute; left:5%;}
+#testimonial .owl-nav [class*='owl-']:hover {
+      background:none;border: none;
+      color:#DD43FF;
+      text-decoration: none; }
+#contact{	min-height: 1000px; width: 100%; padding-top: 100px;
+background: hsla(301, 71%, 60%, 1);
+
+background: linear-gradient(90deg, hsla(301, 71%, 60%, 1) 0%, hsla(49, 96%, 79%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(301, 71%, 60%, 1) 0%, hsla(49, 96%, 79%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(301, 71%, 60%, 1) 0%, hsla(49, 96%, 79%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#E252E0", endColorstr="#FDEA96", GradientType=1 );}
+#contact .vien-chan{
+	padding-bottom: 15px;
+	font-size: 25px;
+	color: #000000;
+	
+}
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+
+.tieu-de{
+	color: black; font-size: 50px
+}
+
+.text-orange{
+	color: orangered
+}
+
+.bo-goc{
+	border-radius: 10px
+}
+
+.drop-shadow{
+	box-shadow: 5px 5px 5px grey
+}
+
+.progress{
+	width: 100%; height: 8px; background-color: darkgray; border-radius: 100px; margin-bottom: 25px; overflow: hidden
+}
+
+.bar{
+	height: 8px; background-color: white; border-radius: 100px; 
+}
